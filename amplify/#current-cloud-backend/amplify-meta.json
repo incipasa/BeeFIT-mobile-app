@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-beefit-staging-160614-authRole",
+      "UnauthRoleArn": "arn:aws:iam::811127812776:role/amplify-beefit-staging-160614-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::811127812776:role/amplify-beefit-staging-160614-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-beefit-staging-160614-deployment",
+      "UnauthRoleName": "amplify-beefit-staging-160614-unauthRole",
+      "StackName": "amplify-beefit-staging-160614",
+      "StackId": "arn:aws:cloudformation:us-east-1:811127812776:stack/amplify-beefit-staging-160614/8fd13c70-8212-11ed-8ec9-0eeac476d8ed",
+      "AmplifyAppId": "d1rfmioimew66o"
+    }
+  },
+  "auth": {
+    "beefitf6146fd0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-beefit-staging-160614-deployment/amplify-cfn-templates/auth/beefitf6146fd0-cloudformation-template.json",
+        "logicalId": "authbeefitf6146fd0"
+      },
+      "lastPushTimeStamp": "2022-12-22T16:58:01.340Z",
+      "output": {
+        "UserPoolId": "us-east-1_zOcz4DPem",
+        "AppClientIDWeb": "61bv5s70k6kl1io74puc8eto4h",
+        "AppClientID": "3gkq09ptq2dda2khv1ilcglvf1",
+        "IdentityPoolId": "us-east-1:8e040bc0-f44c-4f94-8ca9-84acef72fa84",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:811127812776:userpool/us-east-1_zOcz4DPem",
+        "IdentityPoolName": "beefitf6146fd0_identitypool_f6146fd0__staging",
+        "UserPoolName": "beefitf6146fd0_userpool_f6146fd0"
+      },
+      "lastPushDirHash": "0cKM01RmdvEPAz2n33LwxEQOnAY="
+    }
+  }
+}
